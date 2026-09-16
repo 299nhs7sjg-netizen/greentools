@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://299nhs7sjg-netizen.github.io/greentools/sitemap.xml
