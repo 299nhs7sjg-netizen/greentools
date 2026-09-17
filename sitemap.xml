@@ -26,6 +26,21 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://299nhs7sjg-netizen.github.io/greentools/docburn/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://299nhs7sjg-netizen.github.io/greentools/blotout-vs-blur/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://299nhs7sjg-netizen.github.io/greentools/docburn-vs-pdf-redact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://299nhs7sjg-netizen.github.io/docburn/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
