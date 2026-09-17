@@ -160,3 +160,35 @@ footer.site .wrap { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: 
 .compare-list li { margin: .45rem 0; }
 .compare-list strong { color: var(--text); }
 .compare-list em { color: var(--accent); font-style: normal; }
+
+.btn-buy {
+  background: transparent;
+  color: var(--price);
+  border-color: rgba(255, 209, 102, .55);
+}
+.btn-buy:hover {
+  border-color: var(--price);
+  color: #ffe8a3;
+  background: rgba(255, 209, 102, .08);
+}
+.footer-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .75rem;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  max-width: 36rem;
+}
+.related-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: .85rem;
+  margin: 1rem 0 0;
+}
+.related-tools a.card {
+  text-decoration: none;
+}
+.related-tools a.card:hover {
+  text-decoration: none;
+}
