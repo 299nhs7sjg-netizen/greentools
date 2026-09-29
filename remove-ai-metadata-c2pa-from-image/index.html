@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Remove AI Metadata (C2PA / Content Credentials) From an Image | GreenTools</title>
+  <meta name="description" content="What C2PA / Content Credentials and XMP AI tags are, what they reveal, and how to strip them from JPEG, PNG, and WebP in your browser — plus what metadata stripping can’t remove." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://299nhs7sjg-netizen.github.io/greentools/remove-ai-metadata-c2pa-from-image/" />
+  <meta property="og:title" content="How to Remove AI Metadata (C2PA / Content Credentials) From an Image | GreenTools" />
+  <meta property="og:description" content="What C2PA / Content Credentials and XMP AI tags are, what they reveal, and how to strip them from JPEG, PNG, and WebP in your browser — plus what metadata stripping can’t remove." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://299nhs7sjg-netizen.github.io/greentools/remove-ai-metadata-c2pa-from-image/" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "How to remove AI metadata (C2PA) from an image",
+   "description": "What C2PA / Content Credentials and XMP AI tags are, what they reveal, and how to strip them from JPEG, PNG, and WebP in your browser — plus what metadata stripping can’t remove.",
+   "url": "https://299nhs7sjg-netizen.github.io/greentools/remove-ai-metadata-c2pa-from-image/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Open MetaGone",
+     "text": "It runs in the browser; the image isn’t uploaded."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "Add the image",
+     "text": "JPEG, PNG, or WebP."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Check the AI / C2PA group",
+     "text": "MetaGone flags XMP fields (CreatorTool, History, DocumentID, InstanceID) and C2PA/JUMBF markers found in the file bytes."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "Scrub and export",
+     "text": "The image is re-drawn and re-encoded, so embedded metadata blocks — including C2PA/JUMBF and XMP — are not written to the new file."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "name": "Save the proof slip",
+     "text": "The report lists the fields found and removed, with file hashes."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Will this remove the “AI generated” label on social media?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not necessarily. Platforms may use other signals, including invisible watermarks and their own classifiers. Follow platform disclosure rules."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does MetaGone remove camera and GPS data too?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes — the same scrub drops EXIF (camera, GPS, dates) along with XMP and C2PA blocks."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it uploaded anywhere?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, everything runs in your browser."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "One free scrub; $2.99 lifetime unlock for batch scrubbing and clean proof slips."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "name": "How to Remove AI Metadata (C2PA / Content Credentials) From an Image | GreenTools",
+   "url": "https://299nhs7sjg-netizen.github.io/greentools/remove-ai-metadata-c2pa-from-image/",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "GreenTools",
+    "url": "https://299nhs7sjg-netizen.github.io/greentools/"
+   }
+  }
+ ]
+}
+  </script>
+</head>
+<body>
+  <header class="site">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../"><span class="brand-mark">G</span> GreenTools</a>
+      <div class="nav-links">
+        <a href="../snapfit/">SnapFit</a>
+        <a href="../blotout/">BlotOut</a>
+        <a href="../lockfit/">LockFit</a>
+        <a href="../metagone/">MetaGone</a>
+        <a href="../docburn/">DocBurn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap prose">
+    <p class="breadcrumb"><a href="../">GreenTools</a> / <a href="../#guides">Guides</a> / Remove AI metadata (C2PA) from image</p>
+    <span class="badge">Photo privacy · explainer</span>
+    <h1>How to remove AI metadata (C2PA) from an image</h1>
+    <p class="lead" style="color:var(--muted);font-size:1.1rem;">Images from AI generators and some editing apps and cameras can carry provenance metadata: C2PA “Content Credentials” manifests and XMP fields such as creator tool, editing history, and document IDs. These can reveal which software or account workflow produced a file. Here’s what they are and how to strip them locally.</p>
+
+    <div class="cta-box">
+      <div>
+        <p><strong>MetaGone — try free, unlock lifetime for <span style="color:var(--price)">$2.99</span></strong></p>
+        <p>Strip GPS, camera, XMP and C2PA metadata in your browser + proof slip. Free: 1 scrub · $2.99 lifetime: batch, clean report.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://299nhs7sjg-netizen.github.io/metagone/">Open MetaGone free</a>
+        <a class="btn btn-buy" href="https://greenlight5868.gumroad.com/l/metagone-lifetime" target="_blank" rel="noopener">Unlock lifetime $2.99</a>
+      </div>
+    </div>
+
+    <h2>Strip C2PA and XMP in your browser</h2>
+    <ol>
+      <li><strong style="color:var(--text)">Open MetaGone.</strong> It runs in the browser; the image isn’t uploaded.</li>
+      <li><strong style="color:var(--text)">Add the image.</strong> JPEG, PNG, or WebP.</li>
+      <li><strong style="color:var(--text)">Check the AI / C2PA group.</strong> MetaGone flags XMP fields (CreatorTool, History, DocumentID, InstanceID) and C2PA/JUMBF markers found in the file bytes.</li>
+      <li><strong style="color:var(--text)">Scrub and export.</strong> The image is re-drawn and re-encoded, so embedded metadata blocks — including C2PA/JUMBF and XMP — are not written to the new file.</li>
+      <li><strong style="color:var(--text)">Save the proof slip.</strong> The report lists the fields found and removed, with file hashes.</li>
+    </ol>
+
+    <h2>What C2PA is</h2>
+    <p style="color:var(--muted);">C2PA (Coalition for Content Provenance and Authenticity) is an open standard for attaching a signed provenance manifest to media — who or what created it and how it was edited. In JPEGs the manifest is typically stored in a JUMBF metadata box. It’s metadata, so re-encoding the pixels without copying that box removes it.</p>
+    <h2>What stripping metadata can’t do</h2>
+    <ul>
+      <li><strong style="color:var(--text)">Invisible watermarks</strong> embedded in the pixels (some AI providers use these) are not metadata and survive a metadata scrub.</li>
+      <li><strong style="color:var(--text)">It doesn’t change what the image is.</strong> Removing provenance data does not make an AI image “not AI.” Platforms may still label or detect it, and some platforms’ rules require disclosure of AI-generated content — follow them.</li>
+      <li>Good reasons to strip it include privacy (account IDs, file paths, software histories) and reducing file size.</li>
+    </ul>
+    <h2>Other methods</h2>
+    <ul>
+      <li><code>exiftool -all= image.jpg</code> removes EXIF/XMP and other metadata blocks it recognizes.</li>
+      <li>Screenshotting an image also drops embedded metadata but degrades quality.</li>
+    </ul>
+
+    <div class="cta-box">
+      <div>
+        <p><strong>MetaGone — try free, unlock lifetime for <span style="color:var(--price)">$2.99</span></strong></p>
+        <p>Strip GPS, camera, XMP and C2PA metadata in your browser + proof slip. Free: 1 scrub · $2.99 lifetime: batch, clean report.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://299nhs7sjg-netizen.github.io/metagone/">Open MetaGone free</a>
+        <a class="btn btn-buy" href="https://greenlight5868.gumroad.com/l/metagone-lifetime" target="_blank" rel="noopener">Unlock lifetime $2.99</a>
+      </div>
+    </div>
+
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details><summary>Will this remove the “AI generated” label on social media?</summary><p>Not necessarily. Platforms may use other signals, including invisible watermarks and their own classifiers. Follow platform disclosure rules.</p></details>
+      <details><summary>Does MetaGone remove camera and GPS data too?</summary><p>Yes — the same scrub drops EXIF (camera, GPS, dates) along with XMP and C2PA blocks.</p></details>
+      <details><summary>Is it uploaded anywhere?</summary><p>No, everything runs in your browser.</p></details>
+      <details><summary>What does it cost?</summary><p>One free scrub; $2.99 lifetime unlock for batch scrubbing and clean proof slips.</p></details>
+    </div>
+
+    <h2>Sibling tools</h2>
+    <div class="related-tools">
+      <a class="card" href="https://299nhs7sjg-netizen.github.io/docburn/"><h2>DocBurn</h2><p>PDF redaction · client-side · $2.99 lifetime</p></a><a class="card" href="https://299nhs7sjg-netizen.github.io/blotout/"><h2>BlotOut</h2><p>Screenshot blackout · client-side · $2.99 lifetime</p></a><a class="card" href="https://299nhs7sjg-netizen.github.io/metagone/"><h2>MetaGone</h2><p>Photo metadata scrub · client-side · $2.99 lifetime</p></a>
+    </div>
+    <h2>More guides</h2>
+    <ul>
+      <li><a href="../redact-pdf-without-uploading/">How to redact a PDF without uploading it</a></li><li><a href="../black-out-text-in-pdf-permanently/">How to black out text in a PDF permanently</a></li><li><a href="../black-out-text-in-screenshot-offline/">How to black out text in a screenshot offline</a></li><li><a href="../hide-email-in-screenshot-before-sharing/">How to hide an email address in a screenshot before sharing</a></li><li><a href="../is-blurring-a-screenshot-safe/">Is blurring a screenshot safe?</a></li><li><a href="../remove-exif-location-from-iphone-photo/">How to remove EXIF location from an iPhone photo</a></li><li><a href="../remove-gps-from-photo-without-upload/">Remove GPS from a photo online — without uploading it</a></li>
+    </ul>
+    <p style="color:var(--muted);">All tools: <a href="../">GreenTools hub</a> · Compare: <a href="../blotout-vs-blur/">BlotOut vs blur</a> · <a href="../docburn-vs-pdf-redact/">DocBurn vs PDF redact</a></p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span><a href="https://299nhs7sjg-netizen.github.io/greentools/">← GreenTools hub</a></span>
+      <span class="footer-cta">Try free: <a href="https://299nhs7sjg-netizen.github.io/metagone/">MetaGone</a> · Buy lifetime $2.99: <a href="https://greenlight5868.gumroad.com/l/metagone-lifetime" target="_blank" rel="noopener">Gumroad</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Is Blurring a Screenshot Safe? (Why Blur &amp; Pixelate Can Fail) | GreenTools</title>
+  <meta name="description" content="Is blurring a screenshot safe for hiding passwords, emails, or keys? Often not — pixelated text has been reversed by public tools. Here’s why, and what to use instead." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://299nhs7sjg-netizen.github.io/greentools/is-blurring-a-screenshot-safe/" />
+  <meta property="og:title" content="Is Blurring a Screenshot Safe? (Why Blur &amp; Pixelate Can Fail) | GreenTools" />
+  <meta property="og:description" content="Is blurring a screenshot safe for hiding passwords, emails, or keys? Often not — pixelated text has been reversed by public tools. Here’s why, and what to use instead." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://299nhs7sjg-netizen.github.io/greentools/is-blurring-a-screenshot-safe/" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Is blurring a screenshot safe?",
+   "description": "Is blurring a screenshot safe for hiding passwords, emails, or keys? Often not — pixelated text has been reversed by public tools. Here’s why, and what to use instead.",
+   "url": "https://299nhs7sjg-netizen.github.io/greentools/is-blurring-a-screenshot-safe/",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Use an opaque fill",
+     "text": "Cover sensitive text with a 100%-opaque black (or any solid color) box."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "Flatten the export",
+     "text": "Make sure the box is part of the exported pixels, not a separate layer or annotation."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Remove metadata",
+     "text": "Re-encode the image so EXIF data from the original isn’t carried along."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "Verify",
+     "text": "Open the exported file at full zoom and try adjusting brightness/contrast — nothing should appear."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is a heavy blur safe?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A very strong blur over a large area reveals far less than light blur or pixelation, but it still leaves information like text length. Solid fill leaves none, so it’s the safer default."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is pixelation safer than blur?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not necessarily. Pixelation of text in a known font is one of the better-studied cases of reversal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does BlotOut offer blur?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It offers optional mosaic pixelate for non-sensitive areas, but the default and recommended redaction is solid black."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is BlotOut free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Free for 2 watermarked exports; $2.99 lifetime unlock for unlimited, unwatermarked exports."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "name": "Is Blurring a Screenshot Safe? (Why Blur & Pixelate Can Fail) | GreenTools",
+   "url": "https://299nhs7sjg-netizen.github.io/greentools/is-blurring-a-screenshot-safe/",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "GreenTools",
+    "url": "https://299nhs7sjg-netizen.github.io/greentools/"
+   }
+  }
+ ]
+}
+  </script>
+</head>
+<body>
+  <header class="site">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../"><span class="brand-mark">G</span> GreenTools</a>
+      <div class="nav-links">
+        <a href="../snapfit/">SnapFit</a>
+        <a href="../blotout/">BlotOut</a>
+        <a href="../lockfit/">LockFit</a>
+        <a href="../metagone/">MetaGone</a>
+        <a href="../docburn/">DocBurn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap prose">
+    <p class="breadcrumb"><a href="../">GreenTools</a> / <a href="../#guides">Guides</a> / Is blurring a screenshot safe?</p>
+    <span class="badge">Screenshot privacy · explainer</span>
+    <h1>Is blurring a screenshot safe?</h1>
+    <p class="lead" style="color:var(--muted);font-size:1.1rem;">Short answer: <strong style="color:var(--text)">not for text you actually need hidden.</strong> Blur and pixelation keep a transformed version of the original pixels in the image. For short, predictable content — emails, card digits, API keys, passwords in a known font — that can be enough to reconstruct or brute-force the original. Solid black fill replaces the pixels entirely.</p>
+
+    <div class="cta-box">
+      <div>
+        <p><strong>BlotOut — try free, unlock lifetime for <span style="color:var(--price)">$2.99</span></strong></p>
+        <p>Solid-black screenshot redaction in your browser. Free: 2 watermarked exports · $2.99 lifetime: unlimited, no watermark.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://299nhs7sjg-netizen.github.io/blotout/">Open BlotOut free</a>
+        <a class="btn btn-buy" href="https://greenlight5868.gumroad.com/l/blotout-lifetime" target="_blank" rel="noopener">Unlock lifetime $2.99</a>
+      </div>
+    </div>
+
+    <h2>What to do instead</h2>
+    <ol>
+      <li><strong style="color:var(--text)">Use an opaque fill.</strong> Cover sensitive text with a 100%-opaque black (or any solid color) box.</li>
+      <li><strong style="color:var(--text)">Flatten the export.</strong> Make sure the box is part of the exported pixels, not a separate layer or annotation.</li>
+      <li><strong style="color:var(--text)">Remove metadata.</strong> Re-encode the image so EXIF data from the original isn’t carried along.</li>
+      <li><strong style="color:var(--text)">Verify.</strong> Open the exported file at full zoom and try adjusting brightness/contrast — nothing should appear.</li>
+    </ol>
+
+    <h2>Why blur and pixelate can be undone</h2>
+    <ul>
+      <li><strong style="color:var(--text)">Pixelation is deterministic.</strong> Each block is the average of the pixels beneath. If an attacker knows (or guesses) the font, size, and background, they can render candidate text, pixelate it the same way, and match blocks. Open-source tools like Depix demonstrated this on pixelated passwords in screenshots.</li>
+      <li><strong style="color:var(--text)">Weak blur keeps structure.</strong> A small-radius blur leaves letter shapes and word lengths visible; sharpening or simply guessing from context can reveal the content.</li>
+      <li><strong style="color:var(--text)">Swirl/distortion filters are reversible.</strong> Investigators have famously un-swirled a suspect’s face from photos because the filter was a reversible transform.</li>
+      <li><strong style="color:var(--text)">Semi-transparent markers</strong> can be seen through by boosting contrast.</li>
+    </ul>
+    <h2>When blur is fine</h2>
+    <p style="color:var(--muted);">Blurring a background for aesthetics, or softening something that isn’t secret, is fine. The risk is using it as a security control for text or identities.</p>
+    <p style="color:var(--muted);">Longer comparison: <a href="../blotout-vs-blur/">BlotOut vs blur</a>.</p>
+
+    <div class="cta-box">
+      <div>
+        <p><strong>Use solid black instead — BlotOut</strong></p>
+        <p>Draw opaque boxes, export a flattened PNG. In your browser, no upload. Free to try; $2.99 lifetime unlock.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://299nhs7sjg-netizen.github.io/blotout/">Open BlotOut free</a>
+        <a class="btn btn-buy" href="https://greenlight5868.gumroad.com/l/blotout-lifetime" target="_blank" rel="noopener">Unlock lifetime $2.99</a>
+      </div>
+    </div>
+
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details><summary>Is a heavy blur safe?</summary><p>A very strong blur over a large area reveals far less than light blur or pixelation, but it still leaves information like text length. Solid fill leaves none, so it’s the safer default.</p></details>
+      <details><summary>Is pixelation safer than blur?</summary><p>Not necessarily. Pixelation of text in a known font is one of the better-studied cases of reversal.</p></details>
+      <details><summary>Does BlotOut offer blur?</summary><p>It offers optional mosaic pixelate for non-sensitive areas, but the default and recommended redaction is solid black.</p></details>
+      <details><summary>Is BlotOut free?</summary><p>Free for 2 watermarked exports; $2.99 lifetime unlock for unlimited, unwatermarked exports.</p></details>
+    </div>
+
+    <h2>Sibling tools</h2>
+    <div class="related-tools">
+      <a class="card" href="https://299nhs7sjg-netizen.github.io/docburn/"><h2>DocBurn</h2><p>PDF redaction · client-side · $2.99 lifetime</p></a><a class="card" href="https://299nhs7sjg-netizen.github.io/blotout/"><h2>BlotOut</h2><p>Screenshot blackout · client-side · $2.99 lifetime</p></a><a class="card" href="https://299nhs7sjg-netizen.github.io/metagone/"><h2>MetaGone</h2><p>Photo metadata scrub · client-side · $2.99 lifetime</p></a>
+    </div>
+    <h2>More guides</h2>
+    <ul>
+      <li><a href="../redact-pdf-without-uploading/">How to redact a PDF without uploading it</a></li><li><a href="../black-out-text-in-pdf-permanently/">How to black out text in a PDF permanently</a></li><li><a href="../black-out-text-in-screenshot-offline/">How to black out text in a screenshot offline</a></li><li><a href="../hide-email-in-screenshot-before-sharing/">How to hide an email address in a screenshot before sharing</a></li><li><a href="../remove-exif-location-from-iphone-photo/">How to remove EXIF location from an iPhone photo</a></li><li><a href="../remove-gps-from-photo-without-upload/">Remove GPS from a photo online — without uploading it</a></li><li><a href="../remove-ai-metadata-c2pa-from-image/">How to remove AI metadata (C2PA) from an image</a></li>
+    </ul>
+    <p style="color:var(--muted);">All tools: <a href="../">GreenTools hub</a> · Compare: <a href="../blotout-vs-blur/">BlotOut vs blur</a> · <a href="../docburn-vs-pdf-redact/">DocBurn vs PDF redact</a></p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span><a href="https://299nhs7sjg-netizen.github.io/greentools/">← GreenTools hub</a></span>
+      <span class="footer-cta">Try free: <a href="https://299nhs7sjg-netizen.github.io/blotout/">BlotOut</a> · Buy lifetime $2.99: <a href="https://greenlight5868.gumroad.com/l/blotout-lifetime" target="_blank" rel="noopener">Gumroad</a></span>
+    </div>
+  </footer>
+</body>
+</html>
