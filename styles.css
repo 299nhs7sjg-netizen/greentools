@@ -192,3 +192,7 @@ footer.site .wrap { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: 
 .related-tools a.card:hover {
   text-decoration: none;
 }
+
+/* GreenTools All-Access bundle banner (hidden until data-bundle-url is set) */
+.bundle-banner { margin: 1.5rem 0 0; }
+.bundle-banner[hidden] { display: none !important; }

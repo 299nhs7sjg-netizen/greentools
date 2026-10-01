@@ -50,6 +50,18 @@
       <p class="lead">GreenTools is a hub for privacy-first browser utilities: resize photos, permanently black out screenshots, preview lock-screen wallpapers, and strip photo metadata — without uploading your files.</p>
     </section>
 
+    <!-- GreenTools All-Access bundle banner. INERT until data-bundle-url is set to the
+         Gumroad bundle checkout URL (see /workspace/BUNDLE-WIRING.md). Empty = stays hidden. -->
+    <section class="card card-featured bundle-banner" id="bundleBanner" data-bundle-url="" hidden aria-label="GreenTools All-Access bundle">
+      <div class="featured-tag">Bundle</div>
+      <h2>GreenTools All-Access: all 5 tools, $9.99 lifetime (save vs $14.95)</h2>
+      <p>SnapFit, BlotOut, LockFit, MetaGone and DocBurn — one license key unlocks every tool, forever.</p>
+      <div class="price">$9.99 lifetime · <s>$14.95</s> bought separately</div>
+      <div class="actions">
+        <a class="btn btn-primary" data-bundle-checkout>Get all 5 tools for $9.99</a>
+      </div>
+    </section>
+
     <section class="grid" aria-label="Products">
       <article class="card">
         <h2><a href="./snapfit/">SnapFit</a></h2>
@@ -162,6 +174,19 @@
       </span>
     </div>
   </footer>
+<script>
+/* GreenTools All-Access: show banner only when #bundleBanner[data-bundle-url] has a URL. */
+(function () {
+  var b = document.getElementById("bundleBanner");
+  if (!b) return;
+  var url = String(b.getAttribute("data-bundle-url") || "").trim();
+  if (!/^https:\/\//i.test(url)) { b.hidden = true; return; }
+  b.querySelectorAll("[data-bundle-checkout]").forEach(function (a) {
+    a.href = url; a.target = "_blank"; a.rel = "noopener";
+  });
+  b.hidden = false;
+})();
+</script>
 <!-- Cookieless, anonymous page-view counter (GoatCounter). Sends only page path, referrer, screen size; never your files. Public stats: https://greentools.goatcounter.com/ -->
 <script data-goatcounter="https://greentools.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
